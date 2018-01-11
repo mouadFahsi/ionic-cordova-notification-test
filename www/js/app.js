@@ -27,7 +27,7 @@ angular.module('starter', ['ionic'])
 .controller('NotificationCtrl', function($scope){
   $scope.scheduleNotification = ()=>{
     console.log('test clicked');
-    setTimeout(notificatons,3000);
+    setInterval(notificatons,3000);
   }
   var notificatons = () => {
     if(cordova.plugins.notification.local){
